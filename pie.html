@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+   
+   <script language="javascript" type="text/javascript" src="dist/jquery=1.4.2.min.js">
+   </script><script language="javascript" type="text/javascript" src="dist/jquery.jqplot.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="dist/jquery.jqplot.css"/>
+   <script type="text/javascript" src="dist/plugins/jqplot.pieRenderer.min.js"></script>
+   <script type="text/javascript" src="dist/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+   <script type="text/javascript" src="dist/plugins/jqplot.barRenderer.min.js"></script>
+   <script type="text/javascript" src="dist/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+   
+   <script type="text/javascript">
+   $(document).ready(function()){
+    $.jqplot.config.enablePlugins = true;
+	line1 ={['uno',3],['do1',7],['tre1',2.5],['patra',6],['clock',5],['same',4]};
+	plot1=$.jqplot{'chart1',[line1],(
+	title: 'Pie Chart',
+	seriesDefaults:(renderer:$.jqplot.PieRenderer),
+	legend:(show:true)
+	)};
+	}};
+	
+   </script>
+   </head>
+   <body>
+   <div id="chart1"></div>
+   <div id="chart2"></div>
+   <div id="chart3"></div>
+   <div id="chart4"></div>
+   </body>
+   </html>
+   
+   
+   
+   
+   
+   
+   
